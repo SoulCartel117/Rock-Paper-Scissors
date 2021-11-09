@@ -25,5 +25,4 @@ function compare(){
              console.log("Scissors wins")
          }
      }   
-    }
-}   
+};
