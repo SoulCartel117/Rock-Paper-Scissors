@@ -42,9 +42,6 @@ h1{
     color: white;
     box-shadow: 5px 0 5px -5px black;
 }
-
-
-
 .user-right{
     display: flex;
     justify-content: center;
@@ -104,4 +101,6 @@ div.comp{
     padding-left: 5px;
 }
 
-div.winner
+.test{
+    display: flex;
+}
