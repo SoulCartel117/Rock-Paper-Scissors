@@ -4,30 +4,38 @@
     padding: 0;
 }
 
+div.whole{
+    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)), url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.background{
+    background-color: rgba(80, 80, 80, 0.5);
+}
+
 h1{
     text-align: center;
     font-size: 30pt;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    color: white;
+    box-shadow: 0 5px 5px -5px black;
+    margin-left: 17.3%;
+    margin-right: 16.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .container-flex{
     display: flex;
     height: 600px;
-    border: 1px solid black;
-    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)), url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .user-flex{
     display: flex;
-    border: 1px solid black;
     height: 600px;
     width: 50%;
 }
 .computer{
     display: flex;
-    border: 1px solid black;
     height: 600px;
     width: 50%;
 }
@@ -83,7 +91,6 @@ img.vs{
 }
 
 .computer-selection{
-    border: 1px solid blue;
     height: 200px;
     width: 200px;
     margin-top: 25%;
@@ -104,4 +111,17 @@ div.comp{
     padding-left: 5px;
 }
 
-div.winner
+div.winner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.winner h1{
+    color: black;
+    box-shadow: none;
+}
