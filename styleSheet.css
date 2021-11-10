@@ -36,32 +36,31 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid red;
     height: 100%;
     flex-grow: 1;
     background-color: rgba(80, 80, 80, 0.5);
     color: white;
+    box-shadow: 5px 0 5px -5px black;
 }
+
+
+
 .user-right{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
     height: 100%;
     flex-grow: 2;
 }
 .option1{
-    border: 1px solid black;
     height: 75px;
     width: 75px;
 }
 .option2{
-    border: 1px solid black;
     height: 75px;
     width: 75px;
 }
 .option3{
-    border: 1px solid black;
     height: 75px;
     width: 75px;
 }
@@ -72,12 +71,9 @@ div.user-left img{
 }
 
 .user-selection{
-
-    border: 1px solid blue;
     height: 200px;
     width: 200px;
     margin-top: 25%;
-
 }
 
 img.vs{
@@ -93,6 +89,6 @@ img.vs{
     margin-top: 25%;
 }
 div.user-selection img{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 }
