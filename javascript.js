@@ -9,8 +9,18 @@ function d20 (computeroptions) { /// returns random  choice
 
 function rock(){
     let x = document.getElementsByClassName("user-selection");
-    x.innerHTML= rock image
-}
+    x.innerHTML= <img src="images/boulder.jpg"></img>;
+};
+
+function paper(){
+    let x = document.getElementsByClassName("user-selection");
+    x.innerHTML= <img src="images/paper.png"></img>;
+};
+
+function scissors(){
+    let x = document.getElementsByClassName("user-selection");
+    x.innerHTML= <img src="images/scissors.jpg"></img>;
+};
 
 function compare(){
     if(userChoice === computerChoice){
