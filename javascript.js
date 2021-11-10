@@ -1,10 +1,16 @@
 
+
 let computerOptions = ["rock","paper","scissors"];
 
 function d20 (computeroptions) { /// returns random  choice
     return computerChoice = computerOptions[Math.floor((Math.random()*computeroptions.length))];
   
 };
+
+function rock(){
+    let x = document.getElementsByClassName("user-selection");
+    x.innerHTML= rock image
+}
 
 function compare(){
     if(userChoice === computerChoice){
