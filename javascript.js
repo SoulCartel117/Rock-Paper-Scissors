@@ -1,5 +1,7 @@
 
-
+let uScore = 0;
+let cScore = 0;
+let tie = 0;
 let computerOptions = ["rock","paper","scissors"];
 
 function computerSelection (computeroptions) { /// returns random  choice
@@ -60,29 +62,43 @@ function scissors(){
 function compare(){
     if(userChoice === computerChoice){
         console.log("tie")
+        tie++;
+            $("#tie-score").text(`${tie}`);
     }
     else if (userChoice === "rock"){
         if (computerChoice === "scissors"){
             console.log("Rock wins");
+            uScore++;
+            $("#user-score").text(`${uScore}`);
         }
         if (computerChoice === "paper"){
             console.log("Paper wins");
+            cScore++;
+            $("#comp-score").text(`${cScore}`);
         }
     }
     else if (userChoice === "paper"){
         if (computerChoice === "rock"){
             console.log("Paper wins");
+            uScore++;
+            $("#user-score").text(" "+`${uScore}`);
         }
         if (computerChoice === "scissors"){
             console.log("Scissors wins");
+            cScore++;
+            $("#comp-score").text(" "+`${cScore}`);
         }
     }
      else if (userChoice === "scissors"){
         if (computerChoice === "paper"){
-             console.log("Scissors wins")
+             console.log("Scissors wins");
+             uScore++;
+            $("#user-score").text(" "+`${uScore}`);
         }
         if (computerChoice === "rock"){
             console.log("Rock wins");
+            cScore++;
+            $("#comp-score").text(" "+`${cScore}`);
         }
      }   
 };
