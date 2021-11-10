@@ -93,6 +93,10 @@ img.vs{
     margin-top: 25%;
 }
 div.user-selection img{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+}
+div.computer-selection img{
+    height: 200px;
+    width: 200px;
 }

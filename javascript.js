@@ -3,32 +3,54 @@
 let computerOptions = ["rock","paper","scissors"];
 
 function computerSelection (computeroptions) { /// returns random  choice
-    return computerChoice = computerOptions[Math.floor((Math.random()*computeroptions.length))];
-  
+    computerChoice = computerOptions[Math.floor((Math.random()*3))];
+    console.log("computer -- "+ computerChoice);
+    return computer();
+};
+
+function computer(){
+    if (computerChoice === "rock"){
+        let img = document.createElement("IMG");
+        img.src= "images/boulder.jpg";
+        $('#computerImage').html(img); 
+    }
+    else if (computerChoice === "paper"){
+        let img = document.createElement("IMG");
+        img.src= "images/paper.png";
+        $('#computerImage').html(img); 
+    }
+    else if (computerChoice === "scissors"){
+        let img = document.createElement("IMG");
+        img.src= "images/scissors.jpg";
+        $('#computerImage').html(img); 
+    }
 };
 
 function rock(){
     let img = document.createElement("IMG");
     img.src= "images/boulder.jpg";
     $('#image').html(img); 
-    console.log("rock selected");
-    return userChoice = "rock";
+    console.log("user -- rock");
+    userChoice = "rock";
+    return computerSelection();
 };
 
 function paper(){
     let img = document.createElement("IMG");
     img.src= "images/paper.png";
     $('#image').html(img); 
-    console.log("paper selected");
-    return userChoice = "paper";
+    console.log("user -- paper");
+    userChoice = "paper";
+    return computerSelection();
 };
 
 function scissors(){
     let img = document.createElement("IMG");
     img.src= "images/scissors.jpg";
     $('#image').html(img); 
-    console.log("scissors selected");
-    return userChoice = "scissors";
+    console.log("user -- scissors");
+    userChoice = "scissors";
+    return computerSelection();
 };
 
 
