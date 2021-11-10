@@ -13,16 +13,19 @@ function computer(){
         let img = document.createElement("IMG");
         img.src= "images/boulder.jpg";
         $('#computerImage').html(img); 
+        return compare();
     }
     else if (computerChoice === "paper"){
         let img = document.createElement("IMG");
         img.src= "images/paper.png";
         $('#computerImage').html(img); 
+        return compare();
     }
     else if (computerChoice === "scissors"){
         let img = document.createElement("IMG");
         img.src= "images/scissors.jpg";
         $('#computerImage').html(img); 
+        return compare();
     }
 };
 
@@ -56,21 +59,30 @@ function scissors(){
 
 function compare(){
     if(userChoice === computerChoice){
-        console.log(tie)
+        console.log("tie")
     }
     else if (userChoice === "rock"){
+        if (computerChoice === "scissors"){
+            console.log("Rock wins");
+        }
         if (computerChoice === "paper"){
-            console.log("Rock wins")
+            console.log("Paper wins");
         }
     }
     else if (userChoice === "paper"){
         if (computerChoice === "rock"){
-            console.log("Paper wins")
+            console.log("Paper wins");
+        }
+        if (computerChoice === "scissors"){
+            console.log("Scissors wins");
         }
     }
      else if (userChoice === "scissors"){
-         if (computerChoice === "paper"){
+        if (computerChoice === "paper"){
              console.log("Scissors wins")
-         }
+        }
+        if (computerChoice === "rock"){
+            console.log("Rock wins");
+        }
      }   
 };
