@@ -27,7 +27,7 @@
     align-items: center;
     border: 1px solid red;
     height: 100%;
-    width: 33.3%;
+    flex-grow: 1;
 }
 .user-right{
     display: flex;
@@ -35,7 +35,7 @@
     align-items: center;
     border: 1px solid blue;
     height: 100%;
-    width: 66.3%;
+    flex-grow: 2;
 }
 .option1{
     border: 1px solid black;
