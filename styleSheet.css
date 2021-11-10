@@ -96,3 +96,12 @@ div.computer-selection img{
     height: 200px;
     width: 200px;
 }
+
+div.comp{
+    display: flex;
+    align-items: flex-start;
+    box-shadow: -5px 0 5px -5px black;
+    padding-left: 5px;
+}
+
+div.winner
