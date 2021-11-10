@@ -9,17 +9,23 @@ function d20 (computeroptions) { /// returns random  choice
 
 function rock(){
     let x = document.getElementsByClassName("user-selection");
-    x.innerHTML= <img src="images/boulder.jpg"></img>;
+    x.innerHTML= "<img src='images/boulder.jpg'></img>";
+    console.log("rock selected");
+    return userChoice = "rock";
 };
 
 function paper(){
     let x = document.getElementsByClassName("user-selection");
-    x.innerHTML= <img src="images/paper.png"></img>;
+    x.innerHTML= "<img src='images/paper.png'></img>";
+    console.log("paper selected");
+    return userChoice = "paper"
 };
 
 function scissors(){
     let x = document.getElementsByClassName("user-selection");
-    x.innerHTML= <img src="images/scissors.jpg"></img>;
+    x.innerHTML= "<img src='images/scissors.jpg'></img>";
+    console.log("Scissors selected");
+    return userChoice = "scissors"
 };
 
 function compare(){
