@@ -3,21 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
+h1{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
 .container-flex{
     display: flex;
     height: 600px;
     border: 1px solid black;
+    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)), url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .user-flex{
     display: flex;
     border: 1px solid black;
-    height: 400px;
+    height: 600px;
     width: 50%;
 }
 .computer{
     display: flex;
     border: 1px solid black;
-    height: 400px;
+    height: 600px;
     width: 50%;
 }
 .user-left{
@@ -28,6 +39,8 @@
     border: 1px solid red;
     height: 100%;
     flex-grow: 1;
+    background-color: rgba(80, 80, 80, 0.5);
+    color: white;
 }
 .user-right{
     display: flex;
@@ -59,20 +72,25 @@ div.user-left img{
 }
 
 .user-selection{
-    height: 100px;
-    width: 100px;
+
+    border: 1px solid blue;
+    height: 200px;
+    width: 200px;
+    margin-top: 25%;
+
 }
 
 img.vs{
     width: 75px;
     height: 75px;
-    margin-top: 12%;
+    margin-top: 22%;
 }
 
 .computer-selection{
     border: 1px solid blue;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+    margin-top: 25%;
 }
 div.user-selection img{
     height: 100px;
