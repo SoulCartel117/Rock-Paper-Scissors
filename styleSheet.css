@@ -72,10 +72,12 @@ div.user-left img{
 }
 
 .user-selection{
+
     border: 1px solid blue;
     height: 200px;
     width: 200px;
     margin-top: 25%;
+
 }
 
 img.vs{
@@ -90,4 +92,7 @@ img.vs{
     width: 200px;
     margin-top: 25%;
 }
-
+div.user-selection img{
+    height: 100px;
+    width: 100px;
+}

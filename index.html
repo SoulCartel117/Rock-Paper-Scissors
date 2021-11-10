@@ -5,6 +5,7 @@
         </title>
         <link rel="stylesheet" href="styleSheet.css">
         <script src="javascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <h1>Rock, Paper, Scissors</h1>
@@ -13,11 +14,11 @@
                 <div class="user-left">
                     <div class="please"><h2>Please Choose</h2></div>
                     <div onclick="rock()" class="option1"><a href="#"><img src="images/boulder.jpg"></a></div>
-                    <div class="option2"><a href="#"><img src="images/paper.png"></a></div>
-                    <div class="option3"><a href="#"><img src="images/scissors.jpg"></a></div>
+                    <div onclick="paper()" class="option2"><a href="#"><img src="images/paper.png"></a></div>
+                    <div onclick="scissors()" class="option3"><a href="#"><img src="images/scissors.jpg"></a></div>
                 </div>
                 <div class="user-right">
-                    <div class="user-selection"></div>
+                    <div id="image" class="user-selection"></div>
                 </div>
             </div>
             <img src="images/VS.png" class="vs">
