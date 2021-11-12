@@ -13,19 +13,19 @@ function computerSelection (computeroptions) { /// returns random  choice
 function computer(){
     if (computerChoice === "rock"){
         let img = document.createElement("IMG");
-        img.src= "images/boulder.jpg";
+        img.src= "Images/boulder.jpg";
         $('#computerImage').html(img); 
         return compare();
     }
     else if (computerChoice === "paper"){
         let img = document.createElement("IMG");
-        img.src= "images/paper.png";
+        img.src= "Images/paper.png";
         $('#computerImage').html(img); 
         return compare();
     }
     else if (computerChoice === "scissors"){
         let img = document.createElement("IMG");
-        img.src= "images/scissors.jpg";
+        img.src= "Images/scissors.jpg";
         $('#computerImage').html(img); 
         return compare();
     }
@@ -33,7 +33,7 @@ function computer(){
 
 function rock(){
     let img = document.createElement("IMG");
-    img.src= "images/boulder.jpg";
+    img.src= "Images/boulder.jpg";
     $('#image').html(img); 
     console.log("user -- rock");
     userChoice = "rock";
@@ -42,7 +42,7 @@ function rock(){
 
 function paper(){
     let img = document.createElement("IMG");
-    img.src= "images/paper.png";
+    img.src= "Images/paper.png";
     $('#image').html(img); 
     console.log("user -- paper");
     userChoice = "paper";
@@ -51,7 +51,7 @@ function paper(){
 
 function scissors(){
     let img = document.createElement("IMG");
-    img.src= "images/scissors.jpg";
+    img.src= "Images/scissors.jpg";
     $('#image').html(img); 
     console.log("user -- scissors");
     userChoice = "scissors";
